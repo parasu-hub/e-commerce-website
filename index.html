@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopKart - Online Shopping</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="top-header">
+
+        <div class="logo">
+            Shop<span>Kart</span>
+        </div>
+
+        <div class="delivery">
+            📍
+            <div>
+                <small>Deliver to</small>
+                <strong>Chennai 600001</strong>
+            </div>
+        </div>
+
+        <div class="search">
+
+            <select>
+                <option>All</option>
+                <option>Electronics</option>
+                <option>Fashion</option>
+                <option>Mobiles</option>
+            </select>
+
+            <input
+                type="text"
+                placeholder="Search products, brands and more"
+            >
+
+            <button>🔍</button>
+
+        </div>
+
+        <div class="account">
+            <small>Hello, Sign in</small>
+            <strong>Account & Lists ▾</strong>
+        </div>
+
+        <div class="orders">
+            <small>Returns</small>
+            <strong>& Orders</strong>
+        </div>
+
+        <div class="cart-button" onclick="openCart()">
+            🛒
+            <span id="cartCount">0</span>
+            <b>Cart</b>
+        </div>
+
+    </div>
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="navbar">
+
+        <a href="#">☰ All</a>
+        <a href="#">Today's Deals</a>
+        <a href="#">Mobiles</a>
+        <a href="#">Electronics</a>
+        <a href="#">Fashion</a>
+        <a href="#">Home</a>
+        <a href="#">Beauty</a>
+        <a href="#">Best Sellers</a>
+        <a href="#">Customer Service</a>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= MAIN ================= -->
+
+<main>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p>MEGA SHOPPING FESTIVAL</p>
+
+        <h1>
+            Big Deals.<br>
+            Bigger Savings.
+        </h1>
+
+        <p class="hero-text">
+            Discover amazing products at unbeatable prices.
+        </p>
+
+        <button class="shop-now">
+            Shop Now →
+        </button>
+
+    </div>
+
+    <div class="hero-product">
+        🛍️
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="section">
+
+    <div class="section-title">
+
+        <h2>Shop by Category</h2>
+
+        <a href="#">View All →</a>
+
+    </div>
+
+
+    <div class="categories">
+
+        <div class="category">
+            <div>📱</div>
+            <h3>Mobiles</h3>
+            <p>Up to 40% off</p>
+        </div>
+
+        <div class="category">
+            <div>💻</div>
+            <h3>Laptops</h3>
+            <p>Up to 35% off</p>
+        </div>
+
+        <div class="category">
+            <div>🎧</div>
+            <h3>Audio</h3>
+            <p>Starting ₹499</p>
+        </div>
+
+        <div class="category">
+            <div>👕</div>
+            <h3>Fashion</h3>
+            <p>Up to 70% off</p>
+        </div>
+
+        <div class="category">
+            <div>🏠</div>
+            <h3>Home</h3>
+            <p>From ₹299</p>
+        </div>
+
+        <div class="category">
+            <div>⌚</div>
+            <h3>Watches</h3>
+            <p>Up to 50% off</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FLASH DEALS ================= -->
+
+<section class="section">
+
+    <div class="section-title">
+
+        <h2>🔥 Deals of the Day</h2>
+
+        <a href="#">See all deals →</a>
+
+    </div>
+
+
+    <div class="products">
+
+
+        <!-- PRODUCT -->
+
+        <div class="product">
+
+            <div class="wishlist">♡</div>
+
+            <div class="product-image">
+                📱
+            </div>
+
+            <div class="product-content">
+
+                <div class="rating">
+                    ⭐ 4.5
+                </div>
+
+                <h3>
+                    Pro Max Smartphone 5G
+                </h3>
+
+                <p class="details">
+                    8GB RAM | 128GB Storage
+                </p>
+
+                <div class="price">
+                    ₹24,999
+                    <del>₹32,999</del>
+                </div>
+
+                <p class="discount">
+                    24% OFF
+                </p>
+
+                <button
+                    class="add-cart"
+                    onclick="addToCart('Pro Max Smartphone 5G',24999)"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT -->
+
+        <div class="product">
+
+            <div class="wishlist">♡</div>
+
+            <div class="product-image">
+                💻
+            </div>
+
+            <div class="product-content">
+
+                <div class="rating">
+                    ⭐ 4.6
+                </div>
+
+                <h3>
+                    UltraBook Pro Laptop
+                </h3>
+
+                <p class="details">
+                    Intel i5 | 16GB RAM | 512GB SSD
+                </p>
+
+                <div class="price">
+                    ₹49,990
+                    <del>₹65,999</del>
+                </div>
+
+                <p class="discount">
+                    24% OFF
+                </p>
+
+                <button
+                    class="add-cart"
+                    onclick="addToCart('UltraBook Pro Laptop',49990)"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT -->
+
+        <div class="product">
+
+            <div class="wishlist">♡</div>
+
+            <div class="product-image">
+                🎧
+            </div>
+
+            <div class="product-content">
+
+                <div class="rating">
+                    ⭐ 4.3
+                </div>
+
+                <h3>
+                    Wireless Noise Cancelling Headphones
+                </h3>
+
+                <p class="details">
+                    Bluetooth | 40 Hours Battery
+                </p>
+
+                <div class="price">
+                    ₹1,499
+                    <del>₹2,999</del>
+                </div>
+
+                <p class="discount">
+                    50% OFF
+                </p>
+
+                <button
+                    class="add-cart"
+                    onclick="addToCart('Wireless Headphones',1499)"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT -->
+
+        <div class="product">
+
+            <div class="wishlist">♡</div>
+
+            <div class="product-image">
+                ⌚
+            </div>
+
+            <div class="product-content">
+
+                <div class="rating">
+                    ⭐ 4.4
+                </div>
+
+                <h3>
+                    Smart Watch AMOLED
+                </h3>
+
+                <p class="details">
+                    Fitness Tracking | Bluetooth
+                </p>
+
+                <div class="price">
+                    ₹1,999
+                    <del>₹3,999</del>
+                </div>
+
+                <p class="discount">
+                    50% OFF
+                </p>
+
+                <button
+                    class="add-cart"
+                    onclick="addToCart('Smart Watch AMOLED',1999)"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROMO ================= -->
+
+<section class="promo">
+
+    <div>
+
+        <p>LIMITED TIME OFFER</p>
+
+        <h2>
+            Extra ₹1,000 OFF
+        </h2>
+
+        <p>
+            On orders above ₹10,000
+        </p>
+
+        <button>
+            Shop Now
+        </button>
+
+    </div>
+
+    <div class="promo-icon">
+        🎁
+    </div>
+
+</section>
+
+
+<!-- ================= RECOMMENDED ================= -->
+
+<section class="section">
+
+    <div class="section-title">
+
+        <h2>Recommended For You</h2>
+
+        <a href="#">View All →</a>
+
+    </div>
+
+
+    <div class="recommended">
+
+        <div class="mini-product">
+
+            <div>👟</div>
+
+            <h3>Running Shoes</h3>
+
+            <span>⭐ 4.3</span>
+
+            <b>₹1,299</b>
+
+        </div>
+
+
+        <div class="mini-product">
+
+            <div>🎒</div>
+
+            <h3>Travel Backpack</h3>
+
+            <span>⭐ 4.4</span>
+
+            <b>₹899</b>
+
+        </div>
+
+
+        <div class="mini-product">
+
+            <div>👕</div>
+
+            <h3>Premium T-Shirt</h3>
+
+            <span>⭐ 4.2</span>
+
+            <b>₹499</b>
+
+        </div>
+
+
+        <div class="mini-product">
+
+            <div>🕶️</div>
+
+            <h3>Stylish Sunglasses</h3>
+
+            <span>⭐ 4.5</span>
+
+            <b>₹699</b>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-top">
+
+        <div>
+            <h3>Get to Know Us</h3>
+            <a href="#">About ShopKart</a>
+            <a href="#">Careers</a>
+            <a href="#">Press Releases</a>
+        </div>
+
+        <div>
+            <h3>Connect With Us</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+        </div>
+
+        <div>
+            <h3>Make Money With Us</h3>
+            <a href="#">Sell on ShopKart</a>
+            <a href="#">Become an Affiliate</a>
+            <a href="#">Advertise Products</a>
+        </div>
+
+        <div>
+            <h3>Let Us Help You</h3>
+            <a href="#">Your Account</a>
+            <a href="#">Returns Centre</a>
+            <a href="#">Help</a>
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="logo">
+            Shop<span>Kart</span>
+        </div>
+
+        <p>© 2026 ShopKart. All rights reserved.</p>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= CART SIDEBAR ================= -->
+
+<div id="cartOverlay" class="cart-overlay" onclick="closeCart()"></div>
+
+<div id="cartSidebar" class="cart-sidebar">
+
+    <div class="cart-header">
+
+        <h2>Shopping Cart</h2>
+
+        <button onclick="closeCart()">✕</button>
+
+    </div>
+
+
+    <div id="cartItems">
+
+        <div class="empty-cart">
+            🛒
+            <h3>Your cart is empty</h3>
+            <p>Add products to see them here.</p>
+        </div>
+
+    </div>
+
+
+    <div class="cart-bottom">
+
+        <div class="total">
+            <span>Total</span>
+            <strong>₹<span id="cartTotal">0</span></strong>
+        </div>
+
+        <button class="checkout">
+            Proceed to Checkout
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
